@@ -1,0 +1,180 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: black;
+}
+:root{
+    --primarynav: #131921;
+    --secodarynav:#232f3e;
+}
+header{
+    width: 100%;
+    background-color: var(--primarynav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 10vh;
+    text-align: center;
+    color: white;
+}
+.img-fluid{
+    width:100%;
+}
+.header-logo{
+    width: 100px;
+    margin: 5px 0;
+    background-color: black;
+}
+.header-logo img{
+    width: 100%;
+}
+header .header-loc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+.header-search{
+    display: flex;
+    width: 50%;
+    /* gap:10px; */
+}
+.flag{
+    width: 30px;
+}
+.flag img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.header-search input{
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border: none;
+    width: 100%;
+    height:32px;
+    padding: 10px;
+}
+.header-search-leftbtn{
+    width: 30%;
+    height: 32px;
+    padding: 2px 5px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.header-search-button{
+    height: 32px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    background-color: #febd69;
+    color:black;
+    border: 0;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    /* margin-left: 5px; */
+}
+
+/* ------------header ends------------------- */
+/* secondary nav */
+
+.secodarynav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 16px;
+    background-color: var(--secodarynav);
+}
+.secodarynav-list a, .secodarynav-list p{
+    color: white;
+}
+.secodarynav-list p{
+    font-size: 18px;
+}
+.secodarynav-list .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+    
+}
+.secodarynav-list .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+} 
+.secodarynav-list .right img{
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+/* secondary nav end */
+main{
+    background:url('../images/main.jpg') center/cover;
+    height: 90vh;
+    position: relative;
+    padding: 10px 30px;
+}
+
+.card-container{
+    padding: 0 20px;
+}
+.cards-section{
+    position:absolute;
+    top:250px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: baseline;
+    
+    gap:20px;
+}
+.card{
+    width:300px;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    gap:20px;
+    position: relative;
+}
+.card-img { 
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+}
+
+.card-img-container img{
+    width: 137px;
+}
+.signup-card .signin-btn{
+   background-color: rgb(255, 216, 20);
+   width: 100%;
+   padding: 5px 20px;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+}
